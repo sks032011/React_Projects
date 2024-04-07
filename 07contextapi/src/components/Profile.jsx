@@ -1,0 +1,12 @@
+import React, {useContext} from 'react'
+import UserContext from '../Context/Context'
+
+function Profile() {
+    const {user} = useContext(UserContext)
+    
+    if (!user) return <div>please login Kodomo</div>
+
+    return <div>Welcome {user.username}</div>
+}
+
+export default Profile
