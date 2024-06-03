@@ -59,3 +59,16 @@ function InputBox({
 }
 
 export default InputBox;
+
+
+<select
+value={selectCurrency}
+disabled={currencyDisable}
+onChange={(e)=>onCurrencyChange&&onCurrencyChange(e.target.value)}
+>
+{currencyOptions.map((currency)=>(
+    <option value={currency} key={currency}>
+       { currency}
+    </option>
+))}
+</select>

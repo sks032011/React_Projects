@@ -21,7 +21,7 @@ function App() {
     setPassword(pass)
   },[length,charAllowed,numberAllowed,setPassword]) 
   
-  
+
   
   const passcopy=useCallback(()=>{
     passRef.current?.select();
@@ -91,3 +91,5 @@ function App() {
 }
 
 export default App
+
+
